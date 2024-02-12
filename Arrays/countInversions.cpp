@@ -4,7 +4,6 @@ using namespace std;
 
 int countInversionPairsBrute(vector<int> arr){
     int n = arr.size();
-    vector<vector<int>> ans;
     int count =0;
 
     for(int i=0; i<n ; i++){
