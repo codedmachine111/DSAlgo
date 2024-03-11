@@ -13,6 +13,13 @@ bool searchSorted(vector<int> arr, int target){
         if(arr[mid]==target){
             return true;
         }
+
+        if(arr[low] == arr[mid] && arr[mid]==arr[high]){
+            low++;
+            high--;
+            continue;
+        }
+
         // check if left half is sorted
         if(arr[low] > arr[mid]){
             if(arr[low] <= target && target <= arr[mid]){
